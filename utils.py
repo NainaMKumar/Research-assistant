@@ -34,43 +34,6 @@ def search_arxiv(query, max_results = 5):
         for result in results
     ]
 
-"""uncomment if you want to store IDs in json and avoid duplicates"""
-# def search_arxiv(query, max_results = 5): 
-
-#     saved_ids = open_arxiv_ids()
-    
-#     search = arxiv.Search(
-#         query = query, 
-#         max_results = max_results, 
-#         sort_by = arxiv.SortCriterion.Relevance
-#     )
-
-#     results = []
-
-#     for r in client.results(search): 
-
-#         arxiv_id = r.entry_id.split('/')[-1]
-
-#         if arxiv_id in saved_ids: 
-#             continue 
-            
-#         results.append({
-#             "title": r.title,
-#             "id": arxiv_id,
-#             # "authors": [author.name for author in r.authors],
-#             # "abstract": r.summary,
-#             # "pdf_url": r.pdf_url
-#         })
-
-#         saved_ids.append(arxiv_id)
-        
-#     save_arxiv_ids(saved_ids)
-        
-
-#     return results #returns empty list if nothing gets added 
-
-
-
 def download_papers(arxiv_ids, output_dir):
     try: 
         os.mkdir(output_dir)
