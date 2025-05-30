@@ -3,7 +3,7 @@
 A research assistant that searches, downloads, embeds, summarizes, and queries research papers from arXiv and existing papers on your computer. 
 **No APIs**. Leverages locally downloaded models using the OpenVINO library for searching arXiv, chatting with papers, and generating embeddings.
 
-Works best on Intel CPU/GPU. Only supported for ARM CPU. 
+Works best on Intel CPU/GPU. Only CPU support for ARM platforms (no GPU).
 
 ## How to Use this Repo
 1. Clone the repo
