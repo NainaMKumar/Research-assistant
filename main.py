@@ -35,7 +35,7 @@ existing_papers_path = Path("existing_papers")
 existing_papers_path.mkdir(exist_ok=True)
 
 output_dir = Path("arxiv_pdfs")
-existing_papers_path.mkdir(exist_ok=True)
+output_dir.mkdir(exist_ok=True)
 
 embedding_cache =  Path("embedding_cache")
 embedding_cache.mkdir(exist_ok=True)
